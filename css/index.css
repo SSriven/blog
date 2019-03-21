@@ -1,5 +1,5 @@
 .header-title{
-    font-size: 22px;
+    font-size: 2.2rem;
     float:left;
     line-height: 100px;
     color:#444;
@@ -60,7 +60,7 @@ header{
 .header-nav li{
     line-height: 100px;
     font-weight:bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     width: 16.6%;
     text-align: center;
 }
@@ -83,7 +83,7 @@ header{
 .aboutMe-icon span{
     display: inline-block;
     line-height: 100px;
-    font-size: 22px;
+    font-size: 2.2rem;
     width: 40%;
     text-align: center;
     cursor: pointer;
@@ -158,7 +158,7 @@ header{
 }
 .main-block-title{
     float: left;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .main-block-title span{
     display: inline-block;
@@ -189,10 +189,10 @@ header{
 .main-block-more span:last-child{
     vertical-align: -3.5px;
     color:#555;
-    font-size:18px;
+    font-size:1.8rem;
 }
 .main-block-more .more-text{
-    font-size: 12px;
+    font-size: 1.2rem;
     color:#555;
     margin-left: 5px;
 }
@@ -305,7 +305,7 @@ header{
     float: left;
     text-align: center;
     color:#fff;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
     margin-right: 20px;
 }
@@ -320,7 +320,7 @@ header{
 }
 .main-block-content .content-right ul .blog-item p{
     display: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -357,7 +357,7 @@ header{
     width: 50%;
     height: 45px;
     line-height: 45px;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
     position: absolute;
     left:25%;
