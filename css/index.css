@@ -36,17 +36,17 @@ header{
 }
 @media screen and (min-width: 768px) {
     .container{
-        width: 750px;
+        width: 768px;
     }
 }
 @media screen and (min-width: 992px) {
     .container{
-        width: 970px;
+        width: 992px;
     }
 }
 @media screen and (min-width: 1200px) {
     .container{
-        width: 1170px;
+        width: 1200px;
     }
 }
 .display-flex{
@@ -93,14 +93,21 @@ header{
 }
 .big-image{
     height: 600px;
-    margin-top:130px;
+    margin-top:100px;
     width: 100%;
 }
 .bg-image{
-/*     background: url("../images/timg.jpg") center bottom; */
-    background-color: antiquewhite;
+    background: url("../images/bg.jpg") center center;
     width: 100%;
     height: 100%;
+}
+.bg-image p{
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 600px;
+    color:#333;
 }
 .main-content{
     height: auto;
@@ -140,7 +147,7 @@ header{
 }
 @media screen and (min-width: 1200px) {
     .main-left{
-        width: 70%;
+        width: 69%;
     }
     .main-right{
     width: 28%;
@@ -152,6 +159,9 @@ header{
     width: 100%;
     height: 381px;
     margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
 }
 .main-block-header{
     width: 100%;
@@ -243,14 +253,14 @@ header{
     position: absolute;
     top:0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     opacity: 0.7;
     width: 100%;
     height: 100%;
 }
 .main-block-content .content-left .left-pic a .pic-desc{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top:40%;
     display:inline-block;
     width: 100%;
@@ -285,11 +295,11 @@ header{
 }
 .main-block-content .content-right ul .blog-item{
     width: 100%;
-    margin-top: 4px;
+    margin-top: 7px;
 }
 .main-block-content .content-right ul .currentBlog{
     width: 100%;
-    background-color: #fff;
+    background-color: #eee;
     border-radius: 4px;
 }
 .main-block-content .content-right ul .currentBlog a{
@@ -306,7 +316,7 @@ header{
     float: left;
     text-align: center;
     color:#fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 20px;
     margin-right: 20px;
 }
@@ -318,6 +328,7 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 1.5rem;
 }
 .main-block-content .content-right ul .blog-item p{
     display: none;
@@ -326,17 +337,22 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
     height: 48px;
+    color: #555;
 }
 .aside-aboutMe{
     width: 90%;
-    height: 381px;
+    /*! height: 381px; */
     margin:0 auto;
+    background: #fff;
+    /*! padding: 10px; */
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 .aside-aboutMe .ab-title{
     width: 100%;
     height: 45px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 .aside-aboutMe .ab-title .bottom-line-left{
     width: 25%;
@@ -383,6 +399,21 @@ header{
     width: 100%;
     height: 100%;
     opacity: 0.9;
+}
+.aside-aboutMe .ab-info{
+    width: 90%;
+    margin: 0 auto;
+}
+.aside-aboutMe .ab-info .ab-info-list{
+    background-color: #eee;
+    margin-bottom:10px;
+    border: 1px dashed #fff;
+    border-radius: 5px;
+    color:#555;
+    line-height: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    padding-left: 15px;
 }
 footer{
     width: 100%;

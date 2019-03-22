@@ -10,6 +10,7 @@ html{
 }
 body{
     font-size: 1.6rem;
+    color: #555;
 }
 
 header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
@@ -77,7 +78,7 @@ del, ins, u, s, a, a:hover {
 }
 
 body {
-    background: #eee; /*! background-color: rgba(0,107,183,0.9); */
+    background: #e9eaed; /*! background-color: rgba(0,107,183,0.9); */
 }
 
 a, a:hover {
