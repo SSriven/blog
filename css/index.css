@@ -463,6 +463,138 @@ header{
     color:#fff;
     font-size: 1.8rem;
 }
+#music{
+    height: auto;
+}
+.main-block .music-content{
+    width: 100%;
+    height: 446px;
+}
+.main-block .music-content .song-list{
+    width: 266px;
+    float:left;
+    margin:0 5px;
+    padding:10px;
+    background-color: #e9eaed;
+    border-radius: 5px;
+    border:1px dashed #fff;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+    .main-block .music-content .song-list{
+        width: 95%;
+        margin-bottom:20px;
+    }
+    #music{
+        height: 1473px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main-block .music-content .song-list{
+        width: 30%;
+    }
+    #music{
+        height: 491px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-block .music-content .song-list{
+        width: 30%;
+    }
+    #music{
+        height: 491px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main-block .music-content .song-list{
+        width: 266px;
+    }
+    #music{
+        height: 491px;
+    }
+}
+.main-block .music-content .song-list .title{
+    width: 100%;
+    height: 30px;
+    font-size:2rem;
+    color:#222;
+    border-bottom:2px solid #fff;
+}
+.main-block .music-content .song-list .music-content-item{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom:1px solid #f9f9f9;
+    cursor: pointer;
+}
+.main-block .music-content .song-list .music-content-item:hover .music-song-name{
+    color: #bf2c24;
+}
+.main-block .music-content .song-list .number-one{
+    height: 94px;
+    margin:10px 0;
+}
+.main-block .music-content .song-list .number-one .number-one-desc{
+    float: left;
+    height: 100%;
+}
+.main-block .music-content .song-list .number-one .number-one-desc .first{
+    width: 36px;
+    height: 18px;
+    line-height: 18px;
+    background: #bf2c24;
+    color:#fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.main-block .music-content .song-list .number-one .number-one-desc .first-song-name{
+    font-size: 1.6rem;
+    color:#1a1a1a;
+    height: 36px;
+    line-height: 36px;
+}
+.main-block .music-content .song-list .number-one .number-one-desc .first-song-name:hover{
+    color:#bf2c24;
+}
+.main-block .music-content .song-list .number-one .number-one-desc .first-song-singer{
+    height: 36px;
+    line-height: 36px;
+    color:#bf2c24;
+}
+.main-block .music-content .song-list .number-one .number-one-pic{
+    float: right;
+    width: 90px;
+    height:90px;
+}
+.main-block .music-content .song-list .music-content-item .music-index{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: #fff;
+    font-weight: 700;
+    color:#888;
+}
+.main-block .music-content .song-list .music-content-item .second{
+    color:#fff;
+    background-color: #e67225;
+}
+.main-block .music-content .song-list .music-content-item .third{
+    color:#fff;
+    background-color: #e6bf25;
+}
+.main-block .music-content .song-list .music-content-item .music-song-name{
+    margin-left: 10px;
+    color:#444;
+    font-size: 1.5rem;
+}
+.main-block .music-content .song-list .music-content-item .music-song-singer{
+    float:right;
+    font-size:1.3rem;
+    color:#666;
+}
 footer{
     width: 100%;
     height: 300px;
