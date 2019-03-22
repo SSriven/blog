@@ -523,7 +523,7 @@ header{
 .main-block .music-content .song-list .music-content-item{
     width: 100%;
     height: 30px;
-    line-height: 30px;
+    /*! line-height: 30px; */
     border-bottom:1px solid #f9f9f9;
     cursor: pointer;
 }
@@ -553,6 +553,10 @@ header{
     color:#1a1a1a;
     height: 36px;
     line-height: 36px;
+/*     display: inline-block; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .main-block .music-content .song-list .number-one .number-one-desc .first-song-name:hover{
     color:#bf2c24;
@@ -561,6 +565,10 @@ header{
     height: 36px;
     line-height: 36px;
     color:#bf2c24;
+/*     display: inline-block; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .main-block .music-content .song-list .number-one .number-one-pic{
     float: right;
@@ -568,7 +576,7 @@ header{
     height:90px;
 }
 .main-block .music-content .song-list .music-content-item .music-index{
-    display: inline-block;
+    /*! display: inline-block; */
     width: 18px;
     height: 18px;
     line-height: 18px;
@@ -576,6 +584,11 @@ header{
     background: #fff;
     font-weight: 700;
     color:#888;
+    /*! overflow: hidden; */
+    /*! text-overflow: ellipsis; */
+    /*! white-space: nowrap; */
+    float: left;
+    margin-top: 5px;
 }
 .main-block .music-content .song-list .music-content-item .second{
     color:#fff;
@@ -589,15 +602,230 @@ header{
     margin-left: 10px;
     color:#444;
     font-size: 1.5rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50%;
+    line-height: 30px;
+    height: 30px;
+    float: left;
 }
 .main-block .music-content .song-list .music-content-item .music-song-singer{
     float:right;
     font-size:1.3rem;
     color:#666;
+display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 30%;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
 }
+#mv{
+    height:530px;
+}
+.main-block .hot-mv{
+    width: 100%;
+}
+.main-block .hot-mv li{
+    width: 42%;
+    float: left;
+    margin:0 5px;
+    padding:5px;
+    height: 150px;
+}
+.main-block .hot-mv li p{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 375px) {
+    #mv{
+        height:460px ;
+    }
+    .main-block .hot-mv li{
+        width: 42%;
+        margin:0;
+        padding:5px;
+        height: 130px;
+    }
+    .main-block .hot-mv li p{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 520px) {
+    #mv{
+        height:361px ;
+    }
+    .main-block .hot-mv li{
+        width: 30%;
+        margin:0;
+        padding:5px;
+        height: 150px;
+    }
+    .main-block .hot-mv li p{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    #mv{
+        height:341px ;
+    }
+    .main-block .hot-mv li{
+        width: 30%;
+        margin:0 5px;
+        padding:5px;
+        height: 140px;
+    }
+    .main-block .hot-mv li p{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #mv{
+        height:401px ;
+    }
+    .main-block .hot-mv li{
+        width: 256px;
+        margin:0 5px;
+        padding:5px;
+        height: 170px;
+    }
+    .main-block .hot-mv li p{
+        font-size: 1.6rem;
+    }
+}
+.main-block .hot-mv li a{
+    display: inline-block;
+    width: 100%;
+    
+}
+.main-block .hot-mv li a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 footer{
     width: 100%;
     height: 300px;
-    background-color: aqua;
+    background-color: #373d41;
     margin-top:20px;
+    overflow: hidden;
+    border-top:10px solid #00c1de;
+    
+}
+footer .foot{
+    height: 100%;
+    margin-top:50px;
+}
+footer .foot .qr-code{
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+footer .foot .qr-code .weixin{
+    width: 150px;
+    /*! height: 100%; */
+    float: left;
+    margin-right: 40px;
+}
+footer .foot .qr-code .weixin img{
+    width: 100%;
+    height: 150px;
+}
+footer .foot .qr-code span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:#f7f7f7;
+}
+footer .foot .qr-code .qq{
+    width: 150px;
+    /*! height: 100%; */
+    float:left;
+}
+footer .foot .qr-code .qq img{
+    width: 100%;
+    height: 150px;
+}
+footer .foot .statement{
+    float: left;
+    width: 66%;
+}
+footer .foot .statement p{
+    color:#73777a;
+    font-size: 1.8rem;
+    margin-top:5px;
+}
+footer .foot .statement p:first-child{
+    color:#00c1de;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 100%;
+        margin-left:0;
+    }
+    footer .foot .statement{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    footer{
+        height: 700px;
+    }
+    footer .foot .qr-code{
+        width: 100%;
+        margin-left:0;
+        height: 400px;
+    }
+    footer .foot .statement{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 50%;
+        margin:0 30%;
+    }
+    footer .foot .statement{
+        width: 60%;
+        margin:0 20%;
+    }
+}
+@media screen and (min-width: 992px) {
+     footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 40%;
+        margin:0 30%;
+    }
+    footer .foot .statement{
+        width: 60%;
+        margin:0 20%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer{
+        height: 300px;
+    }
+    footer .foot .qr-code{
+        width: 33%;
+        margin:0;
+    }
+    footer .foot .statement{
+        width: 66%;
+        margin:0;
+    }
 }
