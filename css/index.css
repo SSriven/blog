@@ -258,6 +258,9 @@ header{
     width: 100%;
     height: 100%;
 }
+.main-block-content .content-left .left-pic a img:hover{
+    opacity: 1;
+}
 .main-block-content .content-left .left-pic a .pic-desc{
     position: absolute;
     z-index: 1;
@@ -414,6 +417,51 @@ header{
     height: 30px;
     font-size: 1.5rem;
     padding-left: 15px;
+}
+.picture-list{
+    width: 100%;
+    height: 336px;
+    overflow: hidden;
+}
+.picture-list ul{
+    height: 100%;
+    width: 2070px;
+}
+.picture-list ul .photo-item{
+    width: 207px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    /*! padding: 0 10px; */
+    /*! line-height: 336px; */
+}
+.picture-list ul .photo-item a{
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    position: relative;
+    box-shadow: 0px 3px 4px #000;
+}
+.picture-list ul .photo-item a img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+.picture-list ul .photo-item a img:hover{
+    opacity: 1;
+}
+.picture-list ul .photo-item a .photo-name{
+    position: absolute;
+    top:50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-size: 1.8rem;
 }
 footer{
     width: 100%;
