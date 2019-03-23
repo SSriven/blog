@@ -411,7 +411,7 @@ header{
     height: 48px;
     color: #555;
 }
-.aside-aboutMe{
+.aside-box{
     width: 90%;
     /*! height: 381px; */
     margin:0 auto;
@@ -419,14 +419,15 @@ header{
     /*! padding: 10px; */
     border-radius: 5px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
-.aside-aboutMe .ab-title{
+.aside-box .ab-title{
     width: 100%;
     height: 45px;
     position: relative;
     z-index: 1;
 }
-.aside-aboutMe .ab-title .bottom-line-left{
+.aside-box .ab-title .bottom-line-left{
     width: 25%;
     height: 2px;
     background-color: #555;
@@ -434,7 +435,7 @@ header{
     left: 0;
     position: absolute;
 }
-.aside-aboutMe .ab-title .bottom-line-right{
+.aside-box .ab-title .bottom-line-right{
     width: 25%;
     height: 2px;
     background-color: #555;
@@ -442,7 +443,7 @@ header{
     right: 0;
     position: absolute;
 }
-.aside-aboutMe .ab-title .ab-title-word{
+.aside-box .ab-title .ab-title-word{
     width: 50%;
     height: 45px;
     line-height: 45px;
@@ -453,30 +454,30 @@ header{
     text-align: center;
     color:#555;
 }
-.aside-aboutMe .head-portrait{
+.aside-box .head-portrait{
     width: 40%;
     margin: 40px auto;
 }
-.aside-aboutMe .head-portrait a{
+.aside-box .head-portrait a{
     display: block;
     width: 100%;
     height: 100%;
     border-radius:50% 50%;
     overflow:hidden;
 }
-.aside-aboutMe .head-portrait a:hover img{
+.aside-box .head-portrait a:hover img{
     opacity: 1;
 }
-.aside-aboutMe .head-portrait a img{
+.aside-box .head-portrait a img{
     width: 100%;
     height: 100%;
     opacity: 0.9;
 }
-.aside-aboutMe .ab-info{
+.aside-box .ab-info{
     width: 90%;
     margin: 0 auto;
 }
-.aside-aboutMe .ab-info .ab-info-list{
+.aside-box .ab-info .ab-info-list{
     background-color: #eee;
     margin-bottom:10px;
     border: 1px dashed #fff;
@@ -780,7 +781,150 @@ display: inline-block;
     height: 100%;
     border-radius: 10px;
 }
-
+aside .ab-info-detial{
+    margin-top:30px;
+}
+aside .ab-info-detial li{
+    width: 90%;
+    margin:0 auto;
+    margin-bottom:10px;
+    height:40px;
+    border:1px solid #000;
+    border-radius: 5px;
+}
+aside .ab-info-detial li span{
+    height: 40px;
+    display: block;
+    float:left;
+    line-height:40px;
+    cursor: pointer;
+}
+aside .ab-info-detial li span:first-child{
+    margin-left: 5px;
+}
+aside .ab-info-detial li span:last-child:hover{
+    width: 35%;
+}
+aside .ab-info-detial .ab-info-qq{
+    border-color: #2ab39a;
+}
+aside .ab-info-detial .ab-info-qq .srivenIcon-qq{
+    color:#2ab37a;
+    font-size:2.2rem;
+}
+aside .ab-info-detial .ab-info-qq .detial{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color:#2ab37a;
+}
+aside .ab-info-detial .ab-info-qq .ab-info-right{
+    float:right;
+    width: 30%;
+    text-align: center;
+    background: #2ab37a;
+    color:#fff;
+}
+aside .ab-info-detial .ab-info-weixin{
+    border-color: #199872;
+}
+aside .ab-info-detial .ab-info-weixin .srivenIcon-uniE919{
+    color:#199872;
+    font-size:2.2rem;
+}
+aside .ab-info-detial .ab-info-weixin .detial{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color:#199872;
+}
+aside .ab-info-detial .ab-info-weixin .ab-info-right{
+    float:right;
+    width: 30%;
+    text-align: center;
+    background: #2ab37a;
+    color:#fff;
+}
+aside .ab-info-detial .ab-info-email{
+    border-color: #12aae8;
+}
+aside .ab-info-detial .ab-info-email .srivenIcon-10{
+    color:#12aae8;
+    font-size:2.2rem;
+}
+aside .ab-info-detial .ab-info-email .detial{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color:#12aae8;
+}
+aside .ab-info-detial .ab-info-email .ab-info-right{
+    float:right;
+    width: 30%;
+    text-align: center;
+    background: #12aae8;
+    color:#fff;
+}
+aside .ab-info-detial .ab-info-github{
+    border-color: #ec3d51;
+}
+aside .ab-info-detial .ab-info-github .srivenIcon-github{
+    color:#ec3d51;
+    font-size:2.2rem;
+}
+aside .ab-info-detial .ab-info-github .detial{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color:#ec3d51;
+}
+aside .ab-info-detial .ab-info-github .ab-info-right{
+    float:right;
+    width: 30%;
+    text-align: center;
+    background: #ec3d51;
+    color:#fff;
+}
+aside .friendHref-list{
+    width: 80%;
+    margin:10px auto;
+}
+aside .friendHref-list li{
+    list-style: disc;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+aside .friendHref-list a:hover{
+    color:red;
+}
+aside .web-info-list{
+    width: 90%;
+    margin:10px auto;
+}
+aside .web-info-list li{
+    width: 100%;
+    height: 30px;
+}
+aside .web-info-list li span{
+    line-height: 30px;
+}
+aside .web-info-list li .list-title{
+    font-weight: bold;
+}
+aside .web-info-list .qrcode{
+    height: 180px;
+    width: 180px;
+    margin:0 auto;
+}
+aside .web-info-list .qrcode img{
+    width: 100%;
+    height: 100%;
+}
+aside .aside-pic{
+    padding: 0;
+}
+aside .aside-pic img{
+    width: 90%;
+    margin:5%;
+    border-radius: 5px;
+}
 footer{
     width: 100%;
     height: 300px;

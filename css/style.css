@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'sriven';
-  src:  url('../fonts/sriven.eot?2nsamo');
-  src:  url('../fonts/sriven.eot?2nsamo#iefix') format('embedded-opentype'),
-    url('../fonts/sriven.ttf?2nsamo') format('truetype'),
-    url('../fonts/sriven.woff?2nsamo') format('woff'),
-    url('../fonts/sriven.svg?2nsamo#sriven') format('svg');
+  src:  url('../fonts/sriven.eot?oe9ott');
+  src:  url('../fonts/sriven.eot?oe9ott#iefix') format('embedded-opentype'),
+    url('../fonts/sriven.ttf?oe9ott') format('truetype'),
+    url('../fonts/sriven.woff?oe9ott') format('woff'),
+    url('../fonts/sriven.svg?oe9ott#sriven') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.srivenIcon-github:before {
+  content: "\e901";
+}
+.srivenIcon-uniE919:before {
+  content: "\e919";
+}
+.srivenIcon-10:before {
+  content: "\e91a";
+}
 .srivenIcon-uniE90F:before {
   content: "\e90f";
 }
@@ -117,14 +126,8 @@
   margin-left: -1em;
   color: rgb(255, 198, 213);
 }
-.srivenIcon-qq .path1:before {
+.srivenIcon-qq:before {
   content: "\e900";
-  color: rgb(117, 185, 235);
-}
-.srivenIcon-qq .path2:before {
-  content: "\e901";
-  margin-left: -1em;
-  color: rgb(136, 95, 68);
 }
 .srivenIcon-uniE907:before {
   content: "\e907";
