@@ -171,17 +171,19 @@ header{
 .main-content{
     height: auto;
     margin-top:20px;
-    display: flex;
-    justify-content: space-between;
+    /*! display: flex; */
+    /*! justify-content: space-between; */
 }
 .main-left{
     width: 100%;
     /*! background-color: brown; */
     margin:0 auto;
+    float: left;
 }
 .main-right{
     height: auto;
     display: none;
+    float: right;
 }
 .main-block{
     width: 100%;
