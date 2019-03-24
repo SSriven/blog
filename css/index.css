@@ -9,10 +9,12 @@
     z-index: 999;
 }
 header::before{
-     background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55); content: ""; height: 5px; position: absolute; top: 0; width: 100%; 
-
-     /*! z-index: -1; */
-     /*! opacity: 0.5; */
+     background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55); 
+     content: ""; 
+     height: 5px; 
+     position: absolute; 
+     top: 0; 
+     width: 100%; 
 }
 header{
     width: 100%;
@@ -22,6 +24,7 @@ header{
     top:0;
     z-index: 999;
     position: fixed;
+    opacity: 0.9;
 }
 .header-content{
     height: 100%;
@@ -77,7 +80,9 @@ header{
     width: 100%;
     position: absolute;
     top: 100px;
-    height: 180px;
+    /*! height: 180px; */
+    background: #fff;
+    opacity: 0.9;
 }
 .menu-btn ul li{
     width: 100%;
@@ -152,7 +157,7 @@ header{
 }
 .big-image{
     height: 600px;
-    margin-top:100px;
+    /*! margin-top:100px; */
     width: 100%;
 }
 .bg-image{
@@ -414,7 +419,7 @@ header{
     color: #555;
 }
 .aside-box{
-    width: 90%;
+    width: 97%;
     /*! height: 381px; */
     margin:0 auto;
     background: #fff;
@@ -727,6 +732,12 @@ display: inline-block;
 .main-block .hot-mv li p{
     display: inline-block;
     font-size: 1.2rem;
+    width: 50%;
+    float:left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
 }
 @media screen and (min-width: 375px) {
     .main-block .hot-mv li{
