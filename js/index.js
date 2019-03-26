@@ -1,4 +1,6 @@
 $(function () {
+    //0.加载每日一句
+    // loadOneDay();
     //1.导航条滑块特效
     navSpecialEffects();
     //2.导航条吸顶效果
@@ -25,6 +27,24 @@ $(function () {
     var hotMv = [];
     loadHotMv();
 
+    // function loadOneDay(){
+    //     var img = $("#one_day");
+    //     var p = img.find("p");
+    //     $.ajax({
+    //         url:'https://api.bzqll.com/one/day',
+    //         type:"get",
+    //         dataType:'jsonp',
+    //         jsonp: "jsonpCallback",
+    //         scriptCharset: 'GBK',//解决中文乱码
+    //         success: function(data){
+    //             console.log(data);
+    //
+    //         },
+    //         error:function (e) {
+    //             console.log(e);
+    //         }
+    //     });
+    // }
 
     /**
      * 导航条特效
@@ -154,6 +174,9 @@ $(function () {
 
     }
 
+    /**
+     * 加载热门mv
+     */
     function loadHotMv() {
         var mv = $("#mv ul");
         var hotMvUrl = 'https://api.bzqll.com/music/tencent/hotMvList?key=579621905&year=0&tag=0&area=0&limit=100&offset=0';
@@ -169,7 +192,7 @@ $(function () {
                     hotMv[i] = data.data[i];
                     var item = creatEleMv(i,hotMv[i]);
                     mv.append(item);
-                    console.log(hotMv[i]);
+                    // console.log(hotMv[i]);
                 }
             },
             error:function (e) {
@@ -219,11 +242,20 @@ $(function () {
         str.get(0).music = music;
         return str;
     }
-    
+
+    /**
+     * 创建mv元素
+     * @param index
+     * @param mv
+     * @returns {*|jQuery|HTMLElement}
+     */
     function creatEleMv(index,mv) {
         var mvstr = $('<li>\n' +
             '                        <a href="javascript:;" title='+mv.name+'--'+mv.singer+'>\n' +
             '                            <img src='+mv.pic+'>\n' +
+            '                             <div class="mask">\n' +
+            '                                <span class="srivenIcon-uniE91B"></span>\n' +
+            '                             </div>\n' +
             '                        </a>\n' +
             '                        <p class="mv-name">'+mv.name+'</p>\n' +
             '                        <p class="mv-singer">--'+mv.singer+'</p>\n' +
@@ -232,4 +264,4 @@ $(function () {
         mvstr.get(0).mv = music;
         return mvstr;
     }
-})();
+});

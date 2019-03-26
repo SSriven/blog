@@ -787,7 +787,31 @@ display: inline-block;
 .main-block .hot-mv li a{
     display: inline-block;
     width: 100%;
-    
+    position: relative;
+}
+.main-block .hot-mv li a:hover .mask{
+    display: block;
+}
+.main-block .hot-mv li a .mask{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background:rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.main-block .hot-mv li a .mask .srivenIcon-uniE91B{
+    display: inline-block;
+    position: absolute;
+    text-align:center;
+    font-size: 5rem;
+    top:50%;
+    left:50%;
+    margin-top:-25px;
+    margin-left:-25px;
+    color:rgba(255,255,255,0.6);
 }
 .main-block .hot-mv li a img{
     width: 100%;

@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'sriven\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'srivenIcon-uniE91B': '&#xe91b;',
 		'srivenIcon-github': '&#xe901;',
 		'srivenIcon-uniE919': '&#xe919;',
 		'srivenIcon-10': '&#xe91a;',
