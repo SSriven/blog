@@ -1,0 +1,208 @@
+header::before{
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    position: relative;
+}
+.header-title{
+    font-size: 2.2rem;
+    line-height: 80px;
+    float: left;
+    color:#444;
+    width: 175px;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+}
+header .header-content{
+    height:100%;
+    position: relative;
+}
+header .container{
+    width: 100%;
+    margin:0 auto;
+}
+header .nav{
+    float:right;
+    width:60%;
+    position: relative;
+}
+header .nav ul{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+header .nav li{
+    flex:1;
+    display: inline-block;
+}
+header .nav li:hover{
+    background-color: #ffe443;
+    font-weight: bold;
+}
+header .nav li a{
+    line-height: 80px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    width:100%;
+    color:#333;
+}
+@media screen and (min-width: 768px) {
+    header .container{
+        width: 768px;
+    }
+    header .nav{
+        width:60%;
+    }
+}
+@media screen and (min-width: 992px) {
+    header .container{
+        width: 992px;
+    }
+    header .nav{
+        width:50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header .container{
+        width: 1200px;
+    }
+    header .nav{
+        width:45%;
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #373d41;
+    margin-top:20px;
+    overflow: hidden;
+    border-top:10px solid #00c1de;
+
+}
+footer .foot{
+    height: 100%;
+    margin-top:50px;
+}
+footer .foot .qr-code{
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+footer .foot .qr-code .weixin{
+    width: 150px;
+    /*! height: 100%; */
+    float: left;
+    margin-right: 40px;
+}
+footer .foot .qr-code .weixin img{
+    width: 100%;
+    height: 150px;
+}
+footer .foot .qr-code span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:#f7f7f7;
+}
+footer .foot .qr-code .qq{
+    width: 150px;
+    /*! height: 100%; */
+    float:left;
+}
+footer .foot .qr-code .qq img{
+    width: 100%;
+    height: 150px;
+}
+footer .foot .statement{
+    float: left;
+    width: 66%;
+}
+footer .foot .statement p{
+    color:#73777a;
+    font-size: 1.8rem;
+    margin-top:5px;
+}
+footer .foot .statement p:first-child{
+    color:#00c1de;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 100%;
+        margin-left:0;
+    }
+    footer .foot .statement{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    footer{
+        height: 700px;
+    }
+    footer .foot .qr-code{
+        width: 100%;
+        margin-left:0;
+        height: 400px;
+    }
+    footer .foot .statement{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 50%;
+        margin:0 30%;
+    }
+    footer .foot .statement{
+        width: 60%;
+        margin:0 20%;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer{
+        height: 500px;
+    }
+    footer .foot .qr-code{
+        width: 40%;
+        margin:0 30%;
+    }
+    footer .foot .statement{
+        width: 60%;
+        margin:0 20%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer{
+        height: 300px;
+    }
+    footer .foot .qr-code{
+        width: 33%;
+        margin:0;
+    }
+    footer .foot .statement{
+        width: 66%;
+        margin:0;
+    }
+}

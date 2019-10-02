@@ -52,6 +52,14 @@ header{
     text-align: center;
     float:left;
 }
+.audio{
+    position: absolute;
+    top:150px;
+    right:50px;
+}
+.audio audio{
+
+}
 #huakuai{
     width: 16.6%;
     height: 30px;
@@ -543,6 +551,9 @@ header{
     position: relative;
     box-shadow: 0px 3px 4px #000;
 }
+.picture-list ul .photo-item a:hover{
+    box-shadow: 0px 6px 8px rgba(0,0,0,0.8);
+}
 .picture-list ul .photo-item a img{
     width: 100%;
     height: 100%;
@@ -553,6 +564,7 @@ header{
 }
 .picture-list ul .photo-item a img:hover{
     opacity: 1;
+   
 }
 .picture-list ul .photo-item a .photo-name{
     position: absolute;
@@ -572,7 +584,6 @@ header{
     overflow: hidden;
 }
 .main-block .music-content .song-list{
-    width: 266px;
     float:left;
     margin:0 1.6%;
     padding:10px;
@@ -580,6 +591,7 @@ header{
     border-radius: 5px;
     border:1px dashed #fff;
     box-sizing: border-box;
+    width: 96.8%;
 }
 @media screen and (max-width: 767px) {
     .main-block .music-content .song-list{
@@ -587,22 +599,22 @@ header{
         margin-bottom:20px;
     }
 }
-@media screen and (min-width: 768px) {
-    .main-block .music-content .song-list{
-        width: 30%;
-    }
-}
-@media screen and (min-width: 992px) {
-    .main-block .music-content .song-list{
-        width: 30%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .main-block .music-content .song-list{
-        width: 266px;
-        margin: 0 5px;
-    }
-}
+/*@media screen and (min-width: 768px) {*/
+/*    .main-block .music-content .song-list{*/
+/*        width: 30%;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 992px) {*/
+/*    .main-block .music-content .song-list{*/
+/*        width: 30%;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 1200px) {*/
+/*    .main-block .music-content .song-list{*/
+/*        width: 100%;*/
+/*        margin: 0 5px;*/
+/*    }*/
+/*}*/
 .main-block .music-content .song-list .title{
     width: 100%;
     height: 30px;
@@ -627,6 +639,7 @@ header{
 .main-block .music-content .song-list .number-one .number-one-desc{
     float: left;
     height: 100%;
+    width: 50%;
 }
 .main-block .music-content .song-list .number-one .number-one-desc .first{
     width: 36px;
@@ -647,6 +660,7 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    /*width: 12.8rem;*/
 }
 .main-block .music-content .song-list .number-one .number-one-desc .first-song-name:hover{
     color:#bf2c24;
@@ -659,6 +673,7 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    /*width: 12.8rem;*/
 }
 .main-block .music-content .song-list .number-one .number-one-pic{
     float: right;
@@ -801,6 +816,7 @@ display: inline-block;
     left: 0;
     background:rgba(0,0,0,0.3);
     z-index: 1;
+    border-radius: 10px;
 }
 .main-block .hot-mv li a .mask .srivenIcon-uniE91B{
     display: inline-block;
@@ -961,125 +977,4 @@ aside .aside-pic img{
     width: 90%;
     margin:5%;
     border-radius: 5px;
-}
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: #373d41;
-    margin-top:20px;
-    overflow: hidden;
-    border-top:10px solid #00c1de;
-    
-}
-footer .foot{
-    height: 100%;
-    margin-top:50px;
-}
-footer .foot .qr-code{
-    width: 33%;
-    height: 200px;
-    float: left;
-}
-footer .foot .qr-code .weixin{
-    width: 150px;
-    /*! height: 100%; */
-    float: left;
-    margin-right: 40px;
-}
-footer .foot .qr-code .weixin img{
-    width: 100%;
-    height: 150px;
-}
-footer .foot .qr-code span{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    color:#f7f7f7;
-}
-footer .foot .qr-code .qq{
-    width: 150px;
-    /*! height: 100%; */
-    float:left;
-}
-footer .foot .qr-code .qq img{
-    width: 100%;
-    height: 150px;
-}
-footer .foot .statement{
-    float: left;
-    width: 66%;
-}
-footer .foot .statement p{
-    color:#73777a;
-    font-size: 1.8rem;
-    margin-top:5px;
-}
-footer .foot .statement p:first-child{
-    color:#00c1de;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 767px) {
-    footer{
-        height: 500px;
-    }
-    footer .foot .qr-code{
-        width: 100%;
-        margin-left:0;
-    }
-    footer .foot .statement{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 375px) {
-    footer{
-        height: 700px;
-    }
-    footer .foot .qr-code{
-        width: 100%;
-        margin-left:0;
-        height: 400px;
-    }
-    footer .foot .statement{
-        width: 100%;
-    }
-}
-@media screen and (min-width: 768px) {
-    footer{
-        height: 500px;
-    }
-    footer .foot .qr-code{
-        width: 50%;
-        margin:0 30%;
-    }
-    footer .foot .statement{
-        width: 60%;
-        margin:0 20%;
-    }
-}
-@media screen and (min-width: 992px) {
-     footer{
-        height: 500px;
-    }
-    footer .foot .qr-code{
-        width: 40%;
-        margin:0 30%;
-    }
-    footer .foot .statement{
-        width: 60%;
-        margin:0 20%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    footer{
-        height: 300px;
-    }
-    footer .foot .qr-code{
-        width: 33%;
-        margin:0;
-    }
-    footer .foot .statement{
-        width: 66%;
-        margin:0;
-    }
 }

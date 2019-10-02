@@ -16,16 +16,16 @@ $(function () {
     var newMusicUrl = 'https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?' +
         'g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&' +
         'notice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=27&_=1519963122923';
-    loadMusic($(".newsong>ul"),newMusicUrl,newMusic);
+    // loadMusic($(".newsong>ul"),newMusicUrl,newMusic);
     //7.加载最热歌曲
     var hotMusic = [];
     var hotMusicUrl = 'https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?' +
         'g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&' +
         'notice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=36&_=1520777874472'
-    loadMusic($(".hotsong>ul"),hotMusicUrl,hotMusic);
+    // loadMusic($(".hotsong>ul"),hotMusicUrl,hotMusic);
     //8.加载热门mv
     var hotMv = [];
-    loadHotMv();
+    // loadHotMv();
 
     // function loadOneDay(){
     //     var img = $("#one_day");
@@ -74,7 +74,7 @@ $(function () {
             var timer = setInterval(function () {
                 begin = begin + (end - begin) * rate;
                 huakuai.css("left",begin + "px");
-                if(Math.ceil(begin) === Math.ceil(end)){
+                if(Math.floor(begin) === Math.floor(end)){
                     clearInterval(timer);
                 }
             }, 50);
